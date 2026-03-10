@@ -1,0 +1,50 @@
+.subject {
+    padding: 100px 0;
+    background-color: #1E2B4B;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+        &__title {
+            font-size: 50px;
+            color: #FFFFFF;
+            text-align: center;
+            @media (max-width:575px) {
+                font-size: 30px;
+            }
+        }
+        &__elements {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: auto;
+            .table {
+                overflow-x: auto;
+                border-collapse: collapse;
+                .head {
+                    tr {
+                        th {
+                            padding: 10px;
+                            border: 1px solid #FFFFFF;
+                            color: #FFFFFF;
+                            font-size: 20px;
+                        }
+                    }
+                }
+                .body {
+                    tr {
+                        td {
+                            border: 1px solid #FFFFFF;
+                            padding: 10px;
+                            color: #FFFFFF;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
